@@ -12,22 +12,23 @@
 
 <body>
 
-  <button type="button" onclick="app.controllers.houseController.getHouses()" class="btn btn-primary btn-block">Property</button><br>
-  <button type="button" onclick="app.controllers.carController.getCars()" class="btn btn-success btn-block">Cars</button><br>
-  <button type="button" onclick="app.controllers.jobController.getJobs()" class="btn btn-info btn-block">Jobs</button><br>
+  <div class="container">
+    <button type="button" onclick="app.controllers.houseController.getHouses()" class="btn btn-primary btn-block">Property</button><br>
+    <button type="button" onclick="app.controllers.carController.getCars()" class="btn btn-success btn-block">Cars</button><br>
+    <button type="button" onclick="app.controllers.jobController.getJobs()" class="btn btn-info btn-block">Jobs</button><br>
 
-  <div id="job-list" class="row">
+    <div id="job-list" class="row">
+    </div>
+
+    <div id="car-list" class="row">
+    </div>
+
+    <div id="house-list" class="row">
+    </div>
   </div>
 
-  <div id="car-list" class="row">
-  </div>
-
-  <div id="house-list" class="row">
-  </div>
 
 
-
-  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

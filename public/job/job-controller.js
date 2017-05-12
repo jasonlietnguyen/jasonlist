@@ -30,9 +30,11 @@ function JobController() {
     for (var i = 0; i < data.length; i++) {
       var job = data[i];
       template += `
+      <div class="col-lg-3">
       <h4>${job.title}</h4>
       <h4>${job.rating}</h4>
       <h4>${job.salary}</h4>
+      </div>
       `
     }
     return elem.innerHTML = form + template 
@@ -41,6 +43,8 @@ function JobController() {
   this.getJobs = function () {
     jobService.getJob(function (data) {
       draw(data)
+      document.getElementById('car-list').innerHTML = ''
+      document.getElementById('house-list').innerHTML = ''
     })
   }
 

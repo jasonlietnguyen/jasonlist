@@ -32,7 +32,7 @@ function HouseController() {
     for (var i = 0; i < data.length; i++) {
       var house = data[i];
       template += `
-      <div class="col-lg-3">
+       <div class="col-md-3">
         <img src="${house.image}" width="100%">
         <h4>${house.price}</h4>
         <h4>${house.city}</h4>
@@ -46,6 +46,8 @@ function HouseController() {
   this.getHouses = function () {
     houseService.getHouse(function (data) {
       draw(data)
+      document.getElementById('car-list').innerHTML = ''
+      document.getElementById('job-list').innerHTML = ''
     })
   }
 

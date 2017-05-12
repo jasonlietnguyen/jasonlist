@@ -32,10 +32,12 @@ function CarController(){
     for (var i = 0; i < data.length; i++) {
       var car = data[i];
       template += `
+      <div class="col-lg-3"
       <h4>${car.image}</h4>
       <h4>${car.make}</h4>
       <h4>${car.model}</h4>
       <h4>${car.price}</h4>
+      </div>
       `
     }
     return elem.innerHTML = form + template 
@@ -44,6 +46,8 @@ function CarController(){
   this.getCars = function () {
     carService.getCar(function (data) {
       draw(data)
+      document.getElementById('house-list').innerHTML = ''
+      document.getElementById('job-list').innerHTML = ''
     })
   }
 

@@ -30,7 +30,7 @@ function JobController() {
     for (var i = 0; i < data.length; i++) {
       var job = data[i];
       template += `
-      <div class="col-lg-3">
+      <div class="col-lg-4">
       <h4>${job.title}</h4>
       <h4>${job.rating}</h4>
       <h4>${job.salary}</h4>

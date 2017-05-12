@@ -32,7 +32,7 @@ function HouseController() {
     for (var i = 0; i < data.length; i++) {
       var house = data[i];
       template += `
-       <div class="col-md-3">
+       <div class="col-md-4">
         <img src="${house.image}" width="100%">
         <h4>${house.price}</h4>
         <h4>${house.city}</h4>
